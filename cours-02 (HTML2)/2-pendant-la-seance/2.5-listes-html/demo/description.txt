@@ -1,0 +1,21 @@
+================================================================================
+
+Avant de débuter la programmation, prenons un peu de temps pour comprendre le rôle des listes.
+
+Quelques exemples : 
+- Aritzia (https://www.aritzia.com/en/clothing/sweatsuit-sets)
+- Sports Experts (https://www.sportsexperts.ca/fr-CA/)
+
+Ceci étant fait, passons maintenant à la programmation!
+
+1. Ici nous utiliserons la liste non-ordonnée ("unordered list"), définie avec la balise <ul>.
+
+2.1 En premier lieu, ajoutons la balise parent <ul>
+2.2 Ensuite, ajoutons quelques éléments à notre liste, avec la balise <li>
+2.3 Vous pouvez faire un parallèle avec les tables et formulaires, où une balise parent doit être utilisée pour regrouper les sous-éléments.
+
+================================================================================
+
+Notes supplémentaires : 
+    
+================================================================================
