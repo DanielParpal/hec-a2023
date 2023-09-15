@@ -1,0 +1,14 @@
+li, p {
+	margin-bottom: 12px;
+	color: red;
+}
+p {
+	color: darkgrey;
+	background-color: lightgrey;
+}
+.para-premiers {
+	border-bottom: 2px solid black;
+}
+#troisieme-para {
+	border: 2px dotted blue;
+}

@@ -6,7 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Les sélecteurs CSS</title>
     <!-- La balise de style vient ici -->
-
+    <style type="text/css">
+        th {
+            text-decoration: underline;
+        }
+        td {
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            width: 75px;
+        }
+        .temperature-negative {
+            background-color: red;
+            color: white;
+        }
+        #journee-demain {
+            font-size: 4em;
+        }
+        table {
+            text-align: center;
+        }
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <h4>Températures prévues pour la semaine</h4>
@@ -22,11 +49,11 @@
         </thead>
         <tbody>
             <tr>
-                <td>-2</td>
+                <td id="journee-demain" class="temperature-negative">-2</td>
                 <td>4</td>
                 <td>2</td>
-                <td>-4</td>
-                <td>-9</td>
+                <td class="temperature-negative">-4</td>
+                <td class="temperature-negative">-9</td>
             </tr>
         </tbody>
     </table>
