@@ -1,0 +1,87 @@
+Voici la description pour le travail pratique 1, en lien avec le Bloc 1 (HTML + CSS).
+
+Notation: 
+- Les points sont alloués selon les fonctionnalités développées. En d'autres termes, il n'y a pas de points donnés pour l'écriture de code si celui-ci n'offre aucune fonctionnalité. Des points peuvent être enlevés pour le non-respect des meilleures pratiques que nous avons présentées.
+
+Consignes générales:
+- Vous devez travailler directement dans le dossier travail-pratique-1 que vous avez téléchargé à partir de GitHub
+- Lorsque vous avez complété le travail, veuillez compresser votre dossier en format .zip
+- Vous devez remettre ce fichier .zip - incluant index.html, style.css, ainsi que les images - dans l'espace ZoneCours prévu à cet effet. 
+- Les remises par courriel ne seront pas acceptées.
+- Les étapes de réalisation sont détaillées ci-dessous. L'aperçu vidéo peut vous aider à mieux comprendre ce qui est attendu - entre autre les différents points de rupture - mais vous n'avez pas à essayer de deviner quoique ce soit. 
+
+Mise en contexte:
+Vous construirez une page d'application de commerce électronique présentant trois produits, avec une image pour chacun des produits. 
+
+Étapes détaillées:
+
+----------------------------------
+La préparation 
+----------------------------------
+1.1 Ouvrez le fichier index.html (vide)
+1.2 Ajoutez le template HTML de base.
+1.3 Donnez un titre de "Travail pratique 1" à votre fichier (balise <title> dans la section <head>)
+1.4 Ajoutez la balise <meta charset="utf-8"> pour supporter les lettres accentuées et les caractères spéciaux.
+
+2.1 Liez la librairie Bootstrap en utilisant le CDN.
+2.2 Liez le fichier style.css dans votre document index.html. 
+Note : assurez-vous de respecter l'ordre (le lien vers Bootstrap doit venir avant le lien vers le fichier style.css).
+
+----------------------------------
+La grille Bootstrap
+----------------------------------
+3. Mettez en place une grille ("grid") Bootstrap. Voici les spécifications:
+Note: vous devez éviter d'utiliser des "class" superflues. Vous serez pénalisé pour les "class" pouvant être enlevées sans modifier le comportement de votre grille.
+
+3.1 La grille aura 3 rangées (rows).
+3.1.1 Les colonnes seront centrées horizontalement et verticalement dans leur rangée. Prenez le temps de trouver les "class" permettant d'y arriver dans la documentation en ligne. (justify-... et align-...)
+
+3.2 Chacune des rangées aura 2 colonnes.
+3.2.1 La colonne de gauche contiendra une image.
+3.2.2 La colonne de droite contiendra un titre de niveau 3, un paragraphe et un bouton.
+
+3.3 Pour les écrans X-Small, Small et Medium (voir aperçus pour écrans xs-sm-md), la colonne de gauche prendra 6 unités.
+
+3.4 Pour les écrans Large et X-Large (voir aperçu pour écrans lg-xl), la colonne de gauche prendra 3 unités.
+
+3.5 La colonne de droite prendra toujours 6 unités, peu importe la taille de l'écran.
+
+
+----------------------------------
+Le contenu des colonnes de gauche
+----------------------------------
+
+4.1 En utilisant les images fournies dans le dossier du TP, placez une image dans chacune des colonnes de gauche.
+Note : L'ordre des images n'a pas d'importance, tant et aussi longtemps que vous utilisez chacune des images.
+
+4.2 Donnez une class de "img-fluid" à chacune des images, mais ne spécifiez pas les dimensions.
+
+
+----------------------------------
+Le contenu des colonnes de droite
+----------------------------------
+
+5.1 Dans un titre de niveau 3, vous mettrez un peu de lorem ipsum (ou un titre de votre invention).
+	5.1.1 Donnez une "class" de titre-produit à chacun des titres
+5.2 Dans un paragraphe, vous mettrez du lorem ipsum (ou une longue description de votre invention).
+	5.2.1 Donnez une "class" de description-produit à chacun des paragraphes
+5.3 Vous ajouterez un bouton affichant "Acheter", en utilisant la composante Bootstrap "button" (https://getbootstrap.com/docs/4.3/components/buttons/). Dans l'aperçu, le bouton de type "primary" est utilisé, mais vous pouvez en prendre un autre si vous préférez.
+
+Note: Les 3 éléments se suivent un à la suite de l'autre (aucune relation parent-enfant entre eux).
+
+
+----------------------------------
+Le style personnalisé
+----------------------------------
+
+Dans le fichier externe de style créé précédemment (style.css), écrivez les règles permettant de satisfaire les spécifications suivantes. Vous utiliserez seulement des sélecteurs de type .class.
+
+- L'élément de class container aura une marge de dessus de 20px.
+- Pour tous les éléments de class col-6, donnez un padding de 20px pour chaque dimension (top, right, bottom, left). Utilisez une notation abrégée si cela est possible.
+- Pour tous les éléments de class row, donnez une bordure de bas de 1px de largeur, de type continu (solid), et de couleur lightgrey.
+- Pour tous les éléments de class titre-produit, donnez :
+	- Une couleur grey à la police
+	- Une bordure de gauche de 10px de largeur, de type continu (solid) et de couleur black
+	- Un padding de gauche de 20px
+- Pour tous les éléments de class description-produit, donnez un padding de 12px pour le haut, de 20px pour la droite, de 12px pour le bas, et de 20px pour la gauche. Utilisez une notation abrégée si cela est possible.
+
