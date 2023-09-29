@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Démo interactivité</title>
+	<style type="text/css">
+		body {
+			margin: 0;
+		}
+		.menu {
+			width: 200px;
+			height: 100vh;
+			border: 3px solid turquoise;
+			transform: translateX(-100%);
+			transition: transform 0.5s;
+		}
+
+		.menu-visible {
+			transform: translateX(0%);
+		}
+	</style>
+</head>
+<body>
+	<div id="mon-menu" class="menu menu-visible">
+		MENU
+	</div>
+</body>
+</html>
+
+
+
