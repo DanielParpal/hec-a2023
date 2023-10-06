@@ -1,35 +1,42 @@
-// Définissons le tableau des titres de produits
+// Définir le tableau des titres
 var titres = [
-	'Manteau en laine polaire Abisko Trail de Fjallraven - Femmes',
-	'Chandail molletonné Cozy Up de Prana - Femmes',
-	'Couche intermédiaire Rockwall de MEC - Femmes',
-	'Chandail Better Sweater de Patagonia - Femmes'
+	"Salomon Speedcross 6 Gore-Tex Trail Running Shoes - Women's",
+	"Salomon XA Pro 3D v8 Gore-Tex Trail Running Shoes - Women's",
+	"Brooks Cascadia 16 Trail Running Shoes - Women's",
+	"Salomon Sense Ride 5 Trail Running Shoes - Women's"
 ];
 
-var prix = [
-	134.96,
-	84.95,
-	99.95,
-	169.00
-];
-
+// Définir le tableau des évaluations
 var evaluations = [
-	0,
-	3.5,
-	5,
-	4.5
+	4.5,
+	4,
+	4.5,
+	4.4
 ];
 
-console.log(prix);
-console.log(evaluations);
-console.log('-----');
+// Définir le tableau des prix
+var prix = [
+	209.95,
+	134.94,
+	79.97,
+	118.94
+];
 
 
-// Mettons en place une boucle pour afficher tous les titres
-for (var i = 0; i < titres.length; i = i+1) {
-	console.log("Le produit " + i + " est : ", titres[i]);
-	console.log("Le prix associé est:", prix[i]);
-	console.log("Son évaluation est:", evaluations[i]);
-	console.log("---");
+for (var i = 0; i < prix.length; i = i + 1) {
+	var prixMaximal = 150;
+	// console.log(prix[i]);
+	// console.log(prix[i] < 200);
+	if (prix[i] < prixMaximal) {
+		console.log("Le soulier " + titres[i] + " a un prix inférieur à " + prixMaximal + "$.");
+	}
+	// console.log('---------');
 }
+
+
+
+
+
+
+
 
