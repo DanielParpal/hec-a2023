@@ -1,0 +1,81 @@
+Voici la description pour le Travail Pratique 2, en lien avec le Bloc 2 JavaScript.
+
+Notation: 
+- Les points sont alloués selon les fonctionnalités développées. En d'autres termes, il n'y a pas de points donnés pour l'écriture de code si celui-ci n'offre aucune fonctionnalité. Des points peuvent être enlevés pour le non-respect des meilleures pratiques que nous avons présentées.
+- Vous pouvez seulement utiliser les techniques de programmation qui ont été démontrées en cours par l’enseignant, ou demandées explicitement en exercices (incluant les exercices intégrateurs + la pratique d'examen). La manipulation du DOM en JavaScript vanille (sans jQuery) n'est pas permise, ni la définition de vos propres fonctions.
+
+Mise en contexte : 
+Votre compagnie développe une application Web permettant de vendre les mélangeurs Vitamix. Votre équipe est responsable de mettre en place une première version du prototype de panier d'achat.
+
+
+Description générale :
+Pour ce travail, vous aurez besoin d'écrire le code JavaScript permettant de mettre à jour le panier de votre application lorsqu'un utilisateur appuie sur les boutons "Acheter". Tout le travail se fait dans le fichier app.js.
+
+Notes : 
+- Aucune modification au HTML n'est permise.
+- Vous devez travailler directement dans le dossier travail-pratique-2 que vous avez téléchargé à partir de GitHub
+- Lorsque vous avez complété le travail, veuillez compresser votre dossier en format .zip
+- Vous devez remettre ce fichier .zip - incluant index.html, style.css, app.js, ainsi que les images - dans l'espace ZoneCours prévu à cet effet. 
+- Les remises par courriel ne seront pas acceptées.
+
+
+Avant de commencer :
+Pour ce travail, il n'y a pas d'aperçu de type "image". Une capsule YouTube (https://youtu.be/tZOL_tVhLGY) a été construite pour vous aider à comprendre ce qui est attendu. Vous êtes très fortement encouragés à la consulter avant de débuter.
+
+
+Description détaillée des étapes :
+
+1. Téléchargez les fichiers, et prenez le temps de vous familiariser avec ce qui vous a été donné.
+
+
+2. Modélisez les 3 tableaux parallèles suivants, et assurez-vous de comprendre leur interaction (ex: quel est le prix du Vitamix "Le classique"?).
+
+2.1 Le tableau 'noms' contiendra les valeurs suivantes : 
+	- "Smart system"
+	- "Le classique"
+	- "Peu encombrant"
+
+2.2 Le tableau 'prix' contiendra les valeurs suivantes :
+	- 699
+	- 599
+	- 549
+
+2.3 Le tableau 'quantites' contiendra la quantité achetée pour chacun des Vitamix. Au départ, il n'y aura aucun achat d'effectué, alors les valeurs initiales seront :
+	- 0
+	- 0
+	- 0
+
+
+3. Mettez en place un gestionnaire d'événement permettant d'observer un "click" sur les boutons d'achat. Prenez le temps de trouver la classe appropriée pour effectuer votre sélection.
+
+L'ensemble des actions suivantes sont définies à l'intérieur du gestionnaire d'événement.
+
+
+4. Enlevez tout ce qui est affiché présentement dans le panier, afin de pouvoir réécrire le panier mis à jour (étape 7). Cela vous prendra une sélection sur le corps du panier d'achat, ainsi que l'action .html(). Pensez à la valeur que vous mettrez entre les parenthèses de .html() afin d'assigner une chaîne de caractères vide...
+
+
+5. Récupérez la valeur stockée dans l'attribut data-id du bouton cliqué.
+
+
+6. Mettez à jour le tableau des quantités, en augmentant de 1 la quantité du Vitamix venant d'être acheté.
+Indice : La valeur récupérée en 5 peut être utilisée comme index pour accéder à l'élément approprié du tableau 'quantites', et pour le modifier. Révisez la matière sur les tableaux (cours 5) au besoin.
+Mention importante: vous ne devriez PAS utiliser une condition (if/else) pour y arriver. Cela causerait de la duplication de code, ce qui va à l'encontre des meilleures pratiques.
+
+
+7. Construisez le panier d'achat mis à jour.
+7.1 Mettez en place une boucle permettant de parcourir les tableaux parallèles.
+7.2 Ajoutez une nouvelle ligne au corps du panier d'achat, SI la quantité achetée est supérieure à 0 pour un Vitamix. (sinon, ne faites rien). Vous aurez besoin de l'action .append() sur le corps du panier d'achat (même sélection qu'en 4.).
+Note: N'oubliez pas le signe de dollar à la droite du prix unitaire et du prix total (voir aperçu).
+
+Quelques indices :
+- Vous devrez ouvrir (et fermer!) une nouvelle rangée dans la table
+- Vous devrez ouvrir (et fermer!) quatre nouvelles cellules pour chacune des nouvelles lignes
+- Cela peut aider de faire un plan directement en HTML avant de le programmer en JavaScript
+- N'utilisez PAS plusieurs .append() distincts pour ouvrir et fermer la rangée et les cellules: votre navigateur essaiera de fermer immédiatement les balises non-fermées par lui-même, ce qui causera des problèmes d'affichage
+- La concaténation de chaînes de caractères (et l'utilisation d'une variable) peut vous aider à construire le résultat final de manière lisible
+- Vous aurez besoin d'une multiplication pour afficher le prix total pour un Vitamix donné (quantité achetée * prix unitaire)
+
+
+Bon travail!
+
+Note : ceci n'est pas obligatoire pour le TP2, mais il pourrait être intéressant de refaire le travail en utilisant des objets (cours 8)...

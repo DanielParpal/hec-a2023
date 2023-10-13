@@ -1,0 +1,16 @@
+.card-1 {
+	color: rgb(255, 255, 255);
+	background-color: rgb(3, 4, 6);
+}
+
+.card-2 {
+	background-color: rgb(234, 234, 234);
+}
+
+.card-3 {
+	background-color: rgb(213, 208, 204);
+}
+
+.card-2, .card-3 {
+	color: rgb(64, 89, 107);
+}
