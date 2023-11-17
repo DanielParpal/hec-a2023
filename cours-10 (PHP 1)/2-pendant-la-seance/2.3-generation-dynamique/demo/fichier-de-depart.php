@@ -1,3 +1,10 @@
+<?php 
+
+$nomClient = "Daniel Parpal";
+$solde = 150;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +17,8 @@
 <body>
     <div class="container mt-3">
         
-        <h4>Bienvenue, NOM DU CLIENT</h4>
-        <p>Afficher solde du compte</p>
+        <h4>Bienvenue, <?php echo $nomClient; ?></h4>
+        <p><?php echo 'Solde: ' . $solde . '$'; ?></p>
         <!-- Afficher le solde -->
         <p class="mt-2 mb-1"><b>Derniers cours auxquels vous avez assisté</b></p><br>
         <a class="btn btn-primary mb-4" href="#">Réserver un cours! (20$)</a>

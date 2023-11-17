@@ -2,6 +2,7 @@
 
 $client = 'Daniel';
 $soldeCompte = 150;
+$estConnecte = True;
 
 ?>
 
@@ -17,6 +18,9 @@ $soldeCompte = 150;
 <body>
     <div class="container mt-3">
         
+        <!-- le if viendra ici -->
+        <?php if ($estConnecte) { ?>
+
         <h4>Bienvenue, <?php echo $client; ?></h4>
         <?php echo "<u>Le solde de votre compte est $soldeCompte$</u>"; ?><br>
         <p class="mt-2 mb-1"><b>Derniers cours auxquels vous avez assisté</b></p><br>
@@ -47,6 +51,9 @@ $soldeCompte = 150;
                 </tr>
             </tbody>
         </table>
+
+        <!-- else -->
+        <?php } else { ?>
         
         <form>
             <h4>Veuillez vous connecter</h4>
@@ -60,7 +67,17 @@ $soldeCompte = 150;
             </div>
             <button type="submit" class="btn btn-primary">Se connecter</button>
         </form>
+
+        <?php } ?>
         
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
