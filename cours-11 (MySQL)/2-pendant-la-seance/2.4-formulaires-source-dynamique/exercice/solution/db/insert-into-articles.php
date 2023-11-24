@@ -2,10 +2,13 @@
 
 // Variables utilisées dans la requête SQL d'insertion
 $description = $_POST["description"];
+$prix = $_POST["prix"];
+$image = $_POST["imageURL"];
 
 // Ajoute une ligne à la table des articles
 $description = $db->quote($description);
-$query = "INSERT INTO publications (description) VALUES ($description)";
+$image = $db->quote($image);
+$query = "INSERT INTO articles (description, price, picture_url) VALUES ($description, $prix, $image)";
 $db->exec($query);
 
 ?>

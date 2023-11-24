@@ -4,7 +4,9 @@
 include 'db/connexion-MySQL.php';
 
 // Insertion d'une nouvelle ligne dans la table des publications
-include 'db/insert-into-publications.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	include 'db/insert-into-publications.php';	
+}
 
 // Sélection des données de la table des publications
 include 'db/select-publications.php';

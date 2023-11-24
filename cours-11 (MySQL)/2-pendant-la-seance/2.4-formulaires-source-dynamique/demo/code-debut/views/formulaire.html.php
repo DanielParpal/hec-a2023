@@ -5,5 +5,5 @@
         <label for="descriptionPublication">Votre publication : </label>
         <input name="description" type="text" class="form-control" id="descriptionPublication" placeholder="Bonjour, comment allez-vous...">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Soumettre</button>
 </form>
