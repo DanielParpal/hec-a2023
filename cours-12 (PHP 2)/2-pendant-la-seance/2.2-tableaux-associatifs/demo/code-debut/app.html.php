@@ -7,7 +7,7 @@
 <body>
 	<div class="container mt-5">
 		<div class="row justify-content-center">
-			<div class="col-6">
+			<div class="col-10">
 				<h5>Liste des cours</h5>
 				<table class="table">
 		            <thead>
@@ -19,7 +19,26 @@
 		            </thead>
 		            <tbody>
 		            	<!-- Venons ajouter les deux cours à notre table HTML... -->
-
+		            	<tr>
+		            		<td><?php echo $cours_fitness_A["date"]; ?></td>
+		            		<td><?php echo $cours_fitness_A["instructeur"]; ?></td>
+		            		<td><?php echo $cours_fitness_A["titre"]; ?></td>
+		            	</tr>
+		            	<tr>
+		            		<td><?php echo $cours_fitness_B["date"]; ?></td>
+		            		<td><?php echo $cours_fitness_B["instructeur"]; ?></td>
+		            		<td><?php echo $cours_fitness_B["titre"]; ?></td>
+		            	</tr>
+		            	<tr>
+		            		<td><?php echo $cours_fitness_C["date"]; ?></td>
+		            		<td><?php echo $cours_fitness_C["instructeur"]; ?></td>
+		            		<td><?php echo $cours_fitness_C["titre"]; ?></td>
+		            	</tr>
+		            	<tr>
+		            		<td><?php echo $cours_fitness_D["date"]; ?></td>
+		            		<td><?php echo $cours_fitness_D["instructeur"]; ?></td>
+		            		<td><?php echo $cours_fitness_D["titre"]; ?></td>
+		            	</tr>
 		            </tbody>
 				</table>
 			</div>
@@ -27,3 +46,4 @@
 	</div>
 </body>
 </html>
+

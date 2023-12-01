@@ -6,10 +6,12 @@ $description = 'Collection Zara :<br>Cardigan pour garçons, disponibles en diff
 $quantite = 1;
 
 // Définition du tableau des tailles (à faire)
-
+$tailles = [
+    "S", "M", "L"
+];
 
 // Ajout d'un élément avec la syntaxe appropriée
-
+$tailles[] = "XL";
 
 ?>
 
@@ -39,8 +41,9 @@ $quantite = 1;
                 <h5>Tailles disponibles :</h5>
                 <ul class="list-group">
                     <!-- Écrire un algorithme permettant de générer les items de liste (<li>) contenant les différentes tailles. Note: vous pouvez utiliser la classe 'list-group-item' pour vos items de liste, afin de rendre le tout plus joli. -->
-                    
-
+                    <?php foreach($tailles as $taille) { ?>
+                        <li class="list-group-item"><?php echo $taille; ?></li>
+                    <?php } ?>
                 </ul>
                 <hr>
                 

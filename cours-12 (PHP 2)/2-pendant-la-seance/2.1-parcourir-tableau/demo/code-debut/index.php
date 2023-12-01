@@ -4,6 +4,12 @@
 // auxquels un client a participé.
 
 // Définition du tableau des titres de cours
+$titres = [
+	"X-fit (Klub)",
+	"Yoga flow avec musique",
+	"Bootcamp et course",
+	"Boxe cardio"
+];
 
 
 // Mettons en place une boucle pour afficher tous les titres (sans HTML pour débuter)
@@ -11,6 +17,6 @@
 
 
 // Effectuons l'inclusion du fichier d'affichage
-
+include 'app.html.php';
 
 ?>

@@ -10,11 +10,16 @@
 			<div class="col-6">
 				<h5>Liste des cours</h5>
 				<ul class="list-group">
+					<?php foreach($titres as $titre) { ?>
 					<!-- Nous voulons mettre en place un algorithme pour générer la liste HTML dynamiquement -->
-					
+					<li class="list-group-item"><?php echo $titre; ?></li>
+					<?php } ?>
 				</ul>
 			</div>
 		</div>
 	</div>
 </body>
 </html>
+
+
+

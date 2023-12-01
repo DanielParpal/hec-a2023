@@ -8,16 +8,12 @@
         </tr>
     </thead>
     <tbody>
-        <!-- Venons ajouter les deux cours à notre table HTML... -->
+        <?php foreach($cours as $un_cours) { ?>
         <tr>
-            <td><?php echo $cours_1["date"] ?></td>
-            <td><?php echo $cours_1["instructeur"] ?></td>
-            <td><?php echo $cours_1["titre"] ?></td>
+            <td><?php echo $un_cours["date"] ?></td>
+            <td><?php echo $un_cours["coach"] ?></td>
+            <td><?php echo $un_cours["titre"] ?></td>
         </tr>
-        <tr>
-            <td><?php echo $cours_2["date"] ?></td>
-            <td><?php echo $cours_2["instructeur"] ?></td>
-            <td><?php echo $cours_2["titre"] ?></td>
-        </tr>
+        <?php } ?>
     </tbody>
 </table>

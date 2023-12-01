@@ -1,0 +1,75 @@
+================================================================================
+
+TP3 - Bloc 3 (PHP et MySQL)
+
+Notation: 
+- Les points sont alloués selon les fonctionnalités développées. En d'autres termes, il n'y a pas de points donnés pour l'écriture de code si celui-ci n'offre aucune fonctionnalité. Des points peuvent être enlevés pour le non-respect des meilleures pratiques que nous avons présentées.
+
+Contexte : Suite à une étude de marché, vous avez remarqué qu'il existe une opportunité pour la vente de crèmes glacées artisanales haut de gamme. Vous vous êtes donc lancés sur cette opportunité, et après quelques mois d'opérations, vous voulez étudier la popularité de vos glaces en fonction de la saveur.
+
+Dans le TP3, vous développerez une mini-application permettant de saisir les nouvelles ventes, en entrant la saveur et la quantité vendue.
+
+Veuillez vous référer à la capsule YouTube présentant le TP3 (https://youtu.be/1Mca13yU0Uk) pour mieux comprendre ce qui est attendu.
+
+Pour la remise : Vous devez compresser votre dossier de travail et le remettre en format .zip sur ZoneCours.
+
+Note : tous les fichiers ont été créés pour vous. Votre code doit être ajouté aux fichiers existants (ou les modifier).
+
+
+----------------------------------------------------------------------
+1. Familiarisez-vous avez les fichiers fournis
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+2. Initialisez la table MySQL dans PHPMyAdmin
+----------------------------------------------------------------------
+
+- Utilisez le script d'initialisation pour mettre en place la table 'ventes_cremes_glacees' dans PHPMyAdmin. 
+
+----------------------------------------------------------------------
+3. Développez le formulaire permettant de saisir les données
+----------------------------------------------------------------------
+
+- Le formulaire contiendra :
+  - Deux champs, soit un pour la saveur et un autre pour la quantité
+  - Deux étiquettes (label), soit une par champ
+  - Un bouton de soumission
+- Assurez-vous de spécifier les attributs HTML nécessaires
+- Connectez les champs à la requête d'insertion (fichier 'insert-into-ventes.php'), en utilisant la variable $_POST
+- Donnez un style Bootstrap à votre formulaire. Le style final peut légèrement différer de celui présenté dans la capsule YouTube, mais doit utiliser une des options Bootstrap
+Référence : https://getbootstrap.com/docs/4.3/components/forms/
+
+Conseil : N'hésitez pas à réviser les cours 2 (HTML) et cours 4 (Bootstrap) au besoin.
+
+----------------------------------------------------------------------
+4. Développez la table HTML présentant les données de vente
+----------------------------------------------------------------------
+
+- La table contiendra :
+  - Deux colonnes, soit une pour la saveur et une autre pour la quantité vendue (pensez aux en-têtes + corps de la table)
+  - L'algorithme de génération dynamique de contenu, qui permettra de parcourir les données retournées par la requête de sélection et d'afficher les données
+
+
+Note pour ceux qui débutent le TP3 avant le cours 11 :
+Nous verrons les détails permettant d'implémenter l'algorithme au cours 11. Si vous commencez le TP3 avant le cours 11, vous pouvez utiliser un var_dump() dans le fichier 'table.html.php' pour le moment, afin de valider le fonctionnement de votre application. Il ne vous restera que l'algorithme de génération dynamique à écrire. Si vous prenez cette approche, n'oubliez pas : 
+- De mettre les balises PHP pour écrire le var_dump()
+- De trouver le nom de la variable contenant les données retournées par la requête, afin de l'utiliser dans le var_dump()
+- D'enlever le var_dump() lorsque vous écrirez l'algorithme final
+
+Conseil : N'hésitez pas à réviser les cours 2 (HTML) et cours 4 (Bootstrap) au besoin.
+
+----------------------------------------------------------------------
+5. Assemblez le tout dans index.php
+----------------------------------------------------------------------
+
+- Mettez en place le flux d'actions suivant :
+    -> Connexion à la base de données
+    -> Insertion dans la base de données des données du formulaire, de manière conditionnelle à ce que le formulaire vienne d'être soumis
+    -> Lecture (sélection) de toutes les lignes de la table
+    -> Affichage de la page 'views/app.html.php' (qui contient l'inclusion du formulaire et de la table)
+
+Conseil : allez-y une étape à la fois, et validez le fonctionnement avant de passer à l'étape suivante.
+
+Note aux utilisateurs PC : n'oubliez pas de changer le mot de passe pour une chaîne de caractères vide ('') dans votre script de connexion.
+
+================================================================================

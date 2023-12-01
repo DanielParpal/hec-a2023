@@ -14,4 +14,19 @@ $cours_2 = [
 	"titre" => "Yoga Flow avec musique"
 ];
 
+$cours_3 = [
+	"date" => "16 décembre 2023",
+	"instructeur" => "David",
+	"titre" => "haltérophilie"
+];
+
+$cours = [
+	$cours_1,
+	$cours_2,
+	$cours_3
+];
+
 ?>
+
+
+

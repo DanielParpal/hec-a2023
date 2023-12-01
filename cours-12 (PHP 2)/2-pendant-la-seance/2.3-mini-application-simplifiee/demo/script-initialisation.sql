@@ -10,6 +10,6 @@ CREATE TABLE `cours_fitness` (
 
 INSERT INTO `cours_fitness` (`id`, `date`, `instructeur`, `titre`)
 VALUES
-	(1,'22 octobre 2019','Martha','X-fit (Klub)'),
-	(2,'26 octobre 2019','Paul','Yoga Flow avec musique'),
-	(3,'31 octobre 2019','Caroline','Bootcamp et course');
+	(1,'22 décembre 2023','Martha','X-fit (Klub)'),
+	(2,'26 décembre 2023','Paul','Yoga Flow avec musique'),
+	(3,'31 décembre 2023','Caroline','Bootcamp et course');
